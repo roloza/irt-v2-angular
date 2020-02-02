@@ -1,0 +1,31 @@
+.img-brand {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 15px 5px 7px;
+}
+
+.toggle-menu-container {
+    position: relative;
+    width: 100%;;
+    height: 55px;
+}
+
+
+.toggle-menu-container .mat-icon  {
+    font-size: 2rem;
+    top: 10px;;
+    position: absolute;
+    color: #abafb4;
+    right: 20px;
+    left: 20px;
+}
+
+.toggle-menu-container:hover {
+    cursor: pointer;
+}
+
+.sidebar-right-elt {
+    margin-bottom: 5px;
+}

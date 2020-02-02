@@ -1,0 +1,17 @@
+<div class="card-container">
+    <div *ngFor="let brand of brands" class="col-small-6 col-medium-4 col-3">
+        <div class="card" [ngClass]="brand.colorType" [ngStyle]="{background: brand.color}">
+            <div class="content">
+                <div class="img-brand">
+                    <span [innerHTML]="brand.image | safe: 'html'"></span>
+                </div>
+                <h2>{{ brand.title }}</h2>
+                <div class="number">{{ brand.counts[0].value | highNumber }}</div>
+                <h4 class="name">{{brand.counts[0].title}}</h4>
+            </div>
+            <div class="card-footer">
+                <button mat-stroked-button [routerLink]="['/marque', brand.slug]">Détails</button>
+            </div>
+        </div>
+    </div>
+</div>

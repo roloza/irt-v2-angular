@@ -1,0 +1,15 @@
+<div class="inner-content">
+    <div class="toggle-menu-container" (click)="toggleMenu($event)">
+        <mat-icon aria-hidden="false">{{icon}}</mat-icon>
+    </div>
+    <ul>
+        <li class="sidebar-right-elt" *ngFor="let menuElt of menuElts; let i = index">
+            <a [routerLink]="['/marque', menuElt.slug]" routerLinkActive="router-link-active">
+                <div class="img-brand">
+                    <span [innerHTML]="menuElt.image | safe: 'html'"></span>
+                </div>
+                <span class="label">{{menuElt.title}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

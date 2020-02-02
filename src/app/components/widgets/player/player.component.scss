@@ -1,0 +1,15 @@
+.filter-container {
+    margin: auto;
+    max-width: 960px;
+    padding-top: 20px;
+}
+
+.filter-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-group .mat-stroked-button {
+    margin: 0 5px;
+}

@@ -1,0 +1,27 @@
+<div *ngIf="brand" [ngStyle]="{background: brand.color}">
+    <div class="content" [ngClass]="brand.colorType">
+        <div class="btn-back">
+            <button [routerLink]="['/']" mat-stroked-button><mat-icon aria-hidden="false" aria-label="icon">keyboard_return</mat-icon> Retour</button>
+        </div>
+        <div class="col">
+            <h1>{{brand.title}}</h1>
+            <div class="img-brand" [id]="'img-brand-' + brand.id">
+                <span [innerHTML]="brand.image | safe: 'html'"></span>
+            </div> 
+            <div class="link">
+                <mat-icon aria-hidden="false" aria-label="info icon">public_outlined</mat-icon> <a target="_blank" [href]="brand.url">{{brand.url}}</a>
+            </div>
+            <div class="description" [innerHTML]="brand.content | safe: 'html'"></div>
+        </div>
+        <div class="col counts card-container">
+            <div *ngFor="let count of counts" [className]="count.is_primary ? 'col-12' : 'col-6'">
+                <div [ngClass]="{'primary': count.is_primary}">
+                    <div class="count">
+                        <div class="number">{{count.value | highNumber }}</div>
+                        <h3>{{count.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

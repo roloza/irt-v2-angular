@@ -1,0 +1,14 @@
+<div class="filter-container">
+    <div class="filter-content">
+        <div class="btn-group align-left">
+            <button mat-stroked-button (click)="toggleTimer()"><mat-icon aria-hidden="false" aria-label="info icon">timer_outlined</mat-icon> {{stopLabel}}</button>
+            <button mat-stroked-button (click)="timeTo(0)"><mat-icon aria-hidden="false" aria-label="info icon">skip_previous_outlined</mat-icon> Reset</button>
+        </div>
+        <div class="btn-group align-right">
+            <label>Avancer jusqu'à : </label>
+            <button mat-stroked-button  (click)="timeTo(60)"><mat-icon aria-hidden="false" aria-label="info icon">fast_forward_outlined</mat-icon> 1 minute</button>
+            <button mat-stroked-button  (click)="timeTo(3600)"><mat-icon aria-hidden="false" aria-label="info icon">fast_forward_outlined</mat-icon> 1 heure</button>
+            <button mat-stroked-button  (click)="timeTo(86399)"><mat-icon aria-hidden="false" aria-label="info icon">fast_forward_outlined</mat-icon> 24 heures</button>
+        </div>
+    </div>
+</div>

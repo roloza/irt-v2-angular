@@ -1,0 +1,71 @@
+  
+  .card {
+    background: #444;
+    color: #FFF;
+    height: 350px;
+    position: relative;
+    
+}
+
+.card .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+
+}
+
+.card .content h2, .card .content .img-brand {
+    font-size: 2em;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    transition: width .5s ease;
+}
+
+.card .content .number {
+    font-size: 2rem;
+    margin: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card .content .name {
+    margin: 10px;
+    font-weight: normal;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+}
+.card:hover .card-footer {
+    animation: fadein 1s;
+    opacity: 1;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.card-container .light {
+  color: #333;
+  fill: #333;
+}
+
+.card-container .dark {
+  color: #FFF;
+  fill: #FFF;
+}
