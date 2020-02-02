@@ -3,7 +3,7 @@
         <div class="btn-back">
             <button [routerLink]="['/']" mat-stroked-button><mat-icon aria-hidden="false" aria-label="icon">keyboard_return</mat-icon> Retour</button>
         </div>
-        <div class="col">
+        <div class="col description">
             <h1>{{brand.title}}</h1>
             <div class="img-brand" [id]="'img-brand-' + brand.id">
                 <span [innerHTML]="brand.image | safe: 'html'"></span>

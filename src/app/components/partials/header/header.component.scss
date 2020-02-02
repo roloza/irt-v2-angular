@@ -1,14 +1,27 @@
 header {
     display: flex;
 }
+.logo-container a {
+    text-decoration: none;
+}
+.logo-img {
+    height: 70px;
+    margin-left: 20px;
+    line-height: 70px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    width: 260px;
+}
 
+.logo-img svg {
+    height: 70px;
+    width: 70px;
+}
 .horloge-container {
     margin: auto;
 }
 
-.logo {
-    margin-left: 20px;
-}
 .logo .mat-icon {
     font-size: 5rem;
     color: #FFF;
@@ -16,4 +29,9 @@ header {
 
 .title {
     color: #FFF;
+    margin-left: 10px;
+}
+
+.right-content {
+    width: 260px;
 }

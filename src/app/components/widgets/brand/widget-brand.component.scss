@@ -3,8 +3,7 @@
     grid-template-columns: 50% 50%;
     grid-gap: 40px;
     margin: 0px 80px 0px 40px;
-    padding: 40px 0;
-    min-height: calc(100vh - 66px - 80px); /* hauteur = height ecran -  height header  - les paddings */
+    min-height: calc(100vh - 86px - 64px); /* hauteur = height ecran -  height header */
     position: relative;
 }
 
@@ -68,4 +67,8 @@ h1 {
     position: absolute;
     right: 0px;
     top: 20px;
+}
+
+.description {
+    padding: 40px 0;
 }
